@@ -34,10 +34,7 @@ export default async function Home({searchParams}:HomeProps){
   catch(error){
 
     console.log(error)
-     return(
-
-    <div><h4>Fetch failed</h4></div>
-  )
+    throw error
   }
 
 

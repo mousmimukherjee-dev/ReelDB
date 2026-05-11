@@ -1,3 +1,4 @@
+
 import type { Movie } from '@/types/TMDB'
 import Card from './Card'
 

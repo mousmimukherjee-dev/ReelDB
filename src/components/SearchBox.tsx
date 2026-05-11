@@ -7,12 +7,12 @@ const SearchBox = () => {
 
   const [search , setSearch] = useState("")
 
-  const navigation = useRouter()
+  const router = useRouter();
 
   const handelSubmit=(e: { preventDefault: () => void })=>{
 
     e.preventDefault();
-    navigation.push(`/search/${search}`)
+    router.push(`/search/${search}`)
 
   } 
   return (

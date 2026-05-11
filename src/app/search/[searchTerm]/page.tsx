@@ -1,6 +1,4 @@
 import Results from '@/components/Results'
-import React from 'react'
-import { HiH1 } from 'react-icons/hi2'
 
 interface SearchProps{
 

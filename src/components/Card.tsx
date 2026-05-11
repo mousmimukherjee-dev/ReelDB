@@ -1,7 +1,6 @@
 import { Movie } from '@/types/TMDB'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import { FaThumbsUp } from 'react-icons/fa'
 
 const Card = ({movie}:{movie:Movie}) => {

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import type { MovieDetail } from '@/types/TMDB'
 import Image from 'next/image'
 import { error } from 'console'

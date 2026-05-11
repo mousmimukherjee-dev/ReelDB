@@ -21,14 +21,9 @@ const ModeSwitch = () => {
   return (
 
     <>
-
      {mounted  && <> <div>{currentTheme==="dark" ? <MdDarkMode className='text-xl cursor-pointer hover:text-amber-500' onClick={()=>setTheme(currentTheme === "dark"? "light" : "dark")}/> : <MdLightMode className='text-xl cursor-pointer hover:text-amber-500' onClick={()=>setTheme(currentTheme === "dark"? "light" : "dark")}/>}</div></>}
    
-    
     </>
-   
-   
-
   )
 }
 

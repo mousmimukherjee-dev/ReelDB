@@ -1,6 +1,4 @@
-import { Icons } from 'next/dist/lib/metadata/types/metadata-types'
 import Link, { LinkProps } from 'next/link'
-import React from 'react'
 import { IconType } from 'react-icons'
 
 

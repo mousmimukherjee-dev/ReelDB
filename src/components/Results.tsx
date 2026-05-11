@@ -1,6 +1,3 @@
-"use client"
-
-import React from 'react'
 import type { Movie } from '@/types/TMDB'
 import Card from './Card'
 
@@ -13,7 +10,6 @@ const Results = ({apiData}:{apiData: Movie[]}) => {
 
      return <Card key={movie.id} movie={movie}/>
       
-
     })}
     </div>
     

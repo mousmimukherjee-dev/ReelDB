@@ -1,12 +1,6 @@
-
-
 import Results from "@/components/Results";
-
-
 const API_KEY= process.env.TMDB_API_KEY;
 import type { Movie, TmdbResponse} from "@/types/TMDB"
-
-
 
 interface HomeProps{
 

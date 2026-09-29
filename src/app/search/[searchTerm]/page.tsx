@@ -1,5 +1,5 @@
 import Results from '@/components/Results'
-import { error } from 'console'
+
 
 interface SearchProps{
 
@@ -17,7 +17,7 @@ const Searchpage = async ({params}:SearchProps) => {
   const res = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${searchQuery}&include_adult=false&page=1`);
   if(!res.ok){
 
-    throw error
+    throw new Error("Failed to fetch movies");
   }
   const data = await res.json();
   const apiData = data.results
@@ -32,7 +32,7 @@ const Searchpage = async ({params}:SearchProps) => {
  catch(error){
 
   console.log(error)
-  throw error
+throw new Error("Failed to fetch movies");
  }
 }
 

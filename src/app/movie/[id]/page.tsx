@@ -1,6 +1,5 @@
 import type { MovieDetail } from '@/types/TMDB'
 import Image from 'next/image'
-import { error } from 'console'
 
 
 interface MoviePageProps{
@@ -20,7 +19,7 @@ const MoviePage = async ({params}:MoviePageProps) => {
       const res= await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.TMDB_API_KEY}`)
       if(!res.ok){
 
-        throw error
+        throw new Error("Failed to fetch movies");
       }
       const data:MovieDetail = await res.json();
       

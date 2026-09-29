@@ -18,8 +18,10 @@ const MoviePage = async ({params}:MoviePageProps) => {
 
       const res= await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.TMDB_API_KEY}`)
       if(!res.ok){
+          console.log("TMDB STATUS:", res.status);
 
         throw new Error("Failed to fetch movies");
+        
       }
       const data:MovieDetail = await res.json();
       

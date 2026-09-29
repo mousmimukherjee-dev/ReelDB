@@ -16,6 +16,7 @@ const Searchpage = async ({params}:SearchProps) => {
 
   const res = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${process.env.TMDB_API_KEY}&query=${searchQuery}&include_adult=false&page=1`);
   if(!res.ok){
+    console.log("TMDB STATUS:", res.status);
 
     throw new Error("Failed to fetch movies");
   }

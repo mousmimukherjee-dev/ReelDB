@@ -9,14 +9,14 @@ const SearchBox = () => {
 
   const router = useRouter();
 
-  const handelSubmit=(e: { preventDefault: () => void })=>{
+  const handleSubmit=(e: { preventDefault: () => void })=>{
 
     e.preventDefault();
     router.push(`/search/${search}`)
 
   } 
   return (
-    <form className="flex justify-center px-5 max-w-6xl mx-auto" onSubmit={handelSubmit}>
+    <form className="flex justify-center px-5 max-w-6xl mx-auto" onSubmit={handleSubmit}>
       <input value={search} onChange={(e:React.ChangeEvent<HTMLInputElement>) => setSearch(e.target.value) } type="text" placeholder='Search Kerwords...' className="w-full h-14 rounded-md placeholder-gray-500 outline-none bg-transparent flex-1 "/>
       <button className="text-amber-600" disabled={!search} >Search</button>
     </form>

@@ -8,5 +8,5 @@ export default function NotFound() {
         Go back home
       </Link>
     </div>
-  )
+  );
 }
